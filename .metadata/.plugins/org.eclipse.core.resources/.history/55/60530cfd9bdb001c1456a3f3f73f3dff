@@ -1,0 +1,71 @@
+package DataStructure;
+
+public class LinkedL {
+	private Node head;
+	private Node tail;
+	private int size;
+	public LinkedL() {
+		// TODO Auto-generated constructor stub
+		this.size=0; 
+	}
+	
+	public void insert(int value) {
+		Node node=new Node(value);
+		node.next=head;
+		head=node;
+		if(tail==null) {
+			tail=head;
+		}
+		size+=1;
+	}
+	
+	public void insertlast(int value) {
+	Node node=new Node(value);
+	if(tail==null) {
+		insert(value);
+		return;
+	}
+		tail.next=node;
+		tail=node;
+		size+=1;
+	}
+	
+	// insert at a index 
+	public void insertAtIndex(int value,int index) {
+		if(head==null) {
+			insert(value);
+			return;
+		}
+		if(size==index) {
+			insertlast(value);
+			return;
+		}
+	}
+	
+	public void display() {
+	
+		Node temp=head;
+		while(temp!=null) {
+			System.out.print(temp.value+"-->>");
+			temp=temp.next;
+		}
+		System.out.println();
+		
+	}
+private class Node{
+	
+	private int value;
+	private Node next;
+	
+	public Node(int value,Node next) {
+		this.value=value;
+		this.next=next;
+	}
+	public Node(int value) {
+		this.value=value;
+		
+	}
+}
+
+}
+

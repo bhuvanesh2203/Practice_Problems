@@ -1,0 +1,31 @@
+package DataStructure;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * LinkedL l1=new LinkedL(); l1.insert(2); l1.insert(3); l1.insert(5);
+		 * l1.insert(11); l1.insertlast(188); l1.insertAtIndex(0, 3); l1.display();
+		 * System.out.println(l1.deletefirst()); l1.display();
+		 * System.out.println(l1.deleteLastIndex()); l1.display();
+		 * System.out.println("deleted index at 2"+l1.deleteAIndex(2)); l1.display();
+		 */
+         DoubleLL dL=new DoubleLL();
+         dL.insertFirstDLL(1);
+         dL.insertFirstDLL(2);
+         dL.insertFirstDLL(3);
+         dL.insertFirstDLL(4);
+         dL.insertFirstDLL(5);
+         dL.insertFirstDLL(6);
+         
+         dL.display();
+         dL.insertLast(100);
+         dL.insertLast(101);
+         
+         dL.insertAfterIndex(2, -1);
+         System.out.println();
+         dL.display();
+	}
+
+}

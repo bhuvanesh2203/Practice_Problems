@@ -1,0 +1,27 @@
+package SubsetandSubsequence;
+
+import java.util.List;
+
+public class subsetsString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       String s1="abc";
+      // m1(null, "",s1 );
+       System.out.println((int)'c');
+	}
+	
+	
+	
+	static void m1(List l1, String pro,String up) {
+		if(up.length()==0) {
+			//l1.add(pro);
+			System.out.println( pro);
+			return ;
+		}
+		
+ 		 m1(l1, pro+up.charAt(0), up.substring(1));
+		 m1(l1, pro, up.substring(1));
+	}
+
+}

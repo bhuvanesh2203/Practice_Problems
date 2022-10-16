@@ -1,0 +1,44 @@
+package test;
+
+import java.util.Iterator;
+
+class Solution {
+    static int diagonalSum(int[][] mat) {
+        int sum=0;
+        for(int i=0;i<mat.length;i++){
+            
+            for(int j=0;j<mat[i].length;j++){
+                if(i==j){
+                    sum+=mat[i][j];
+                }
+                
+            }
+        }
+        System.out.println("first:"+sum);
+        int row_mat=mat.length-1;
+     
+        int i=0;
+        while(row_mat>=0 &&i<mat.length){
+          if(row_mat==i){continue;}
+            sum+=mat[row_mat--][i++];
+            
+        }
+        
+        return sum;
+        
+    }
+    private static void main(String args[]) {
+		// TODO Auto-generated method stub
+          int mat[][] = {{1,2,3},
+                     {4,5,6},
+                     {7,8,9}};
+        //  System.out.println(diagonalSum(mat));
+          System.out.println("now is now fucking time");
+          String string="10";
+          for(int i=0;i<string.length();i++) {
+        	  System.out.println(string.charAt(i));
+          }
+          
+          
+	}
+}

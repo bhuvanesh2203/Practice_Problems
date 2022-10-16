@@ -1,0 +1,15 @@
+package test;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class test2 {
+
+	public static void main(String[] args) {
+		String buy = "bitcoin";
+
+		System.out.println(buy.substring(0, 0+1)+ buy.substring(3,3+2));
+	          
+	}
+
+}

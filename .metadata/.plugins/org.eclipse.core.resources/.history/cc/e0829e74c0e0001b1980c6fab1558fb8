@@ -1,0 +1,44 @@
+package Polimorphism;
+
+import java.util.ArrayList;
+
+public class ComplietheCars {
+	public ComplietheCars() {
+		// TODO Auto-generated constructor stub
+	}
+	public ComplietheCars(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// static or run time polimorphism
+		/*
+		 * Honda c =new Honda(); c.start(); c.stop(); c.reliability();
+		 */
+		
+		
+		ComplietheCars aCars=new ComplietheCars();
+		System.out.println(aCars);
+		System.out.println("-----");
+		ComplietheCars aCars2=new ComplietheCars("String");
+		System.out.println(aCars2);
+		System.out.println("-----");
+		
+		
+		System.out.println(" next  child class oject is referreed by parent class its dynamic or run time polimorphism");
+         Car p = new Honda();
+         p.start();
+         p.stop();
+         Honda.speed();
+			/*
+			 * ArrayList<Integer> nArrayList=new ArrayList<Integer>(); nArrayList.add(0);
+			 * nArrayList.add(1); nArrayList.add(2); nArrayList.add(3); nArrayList.add(4);
+			 * nArrayList.remove(1); System.out.println(nArrayList.size());
+			 * System.out.println(nArrayList.get(3));
+			 */
+         
+         
+         
+	}
+
+}

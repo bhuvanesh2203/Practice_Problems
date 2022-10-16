@@ -1,0 +1,27 @@
+package newSuit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class UIvalidationsClass {
+	@Test
+	public void test1() {
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chrome\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://www.amazon.in/");
+		driver.manage().window().maximize();
+		try {
+		    Thread.sleep(1000);
+		} catch (InterruptedException e) {
+		    e.printStackTrace();
+		    // handle the exception...        
+		    // For example consider calling Thread.currentThread().interrupt(); here.
+		}
+		driver.findElement(By.partialLinkText("Today's Deals")).click();
+		driver.quit();
+		
+	}
+
+}

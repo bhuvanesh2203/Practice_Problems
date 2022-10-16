@@ -1,0 +1,19 @@
+package Polimorphism;
+
+public class ComplietheCars {
+
+	public static void main(String[] args) {
+		// static or run time polimorphism
+		Honda c =new Honda();
+		c.start();
+		c.stop();
+		c.reliability();
+		System.out.println(" next  child class oject is referreed by parent class its dynamic or run time polimorphism");
+         Car p = new Honda();
+         p.start();
+         p.stop();
+         
+         
+	}
+
+}

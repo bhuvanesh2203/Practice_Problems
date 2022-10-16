@@ -1,0 +1,20 @@
+package newSuit;
+
+public class Practice {
+	public static int fun(int a,int b,int c) {
+		
+	if((a-b+c)<(c-a)) {
+		a=13+a;
+		c=5&c;
+	}
+	b=(b^a)+b;
+		return a+b+c;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int a=fun(0, 4, 8);
+       System.out.println("a is:"+a);
+	}
+
+}

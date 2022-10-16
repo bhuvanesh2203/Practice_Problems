@@ -1,0 +1,61 @@
+package Problems;
+
+public class Findrotationcountbinarysearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a[]={7, 9, 11, 12, 5};
+		
+		int n=count(a,0,a.length-1);
+		System.out.println(n);
+		
+		System.out.println(n+1);
+
+	}
+	
+	
+	static int count(int a[],int start,int end) {
+		int count=0;
+		while(start<=end) {
+			int m=start+(end-start)/2;
+			if( m<end && a[m]>a[m+1]) {
+				return m;
+			}
+			else if(m>start && a[m]<a[m-1]){
+				return m-1;
+			}
+			 else if(a[start]>=a[m]){
+	                end=m-1;
+	            }
+	            else if(a[start]<=a[m]){
+	                start=m+1;
+	            }
+			
+	            else if (a[m] == a[start] && a[m] == a[end]) {
+	                // skip the duplicates
+	                // NOTE: what if these elements at start and end were the pivot??
+	                // check if start is pivot
+	                if (a[start] > a[start + 1]) {
+	                    return start;
+	                }
+	                start++;
+
+	                // check whether end is pivot
+	                if (a[end] < a[end - 1]) {
+	                    return end - 1;
+	                }
+	                end--;
+	            }
+	            // left side is sorted, so pivot should be in right
+	            else if(a[start] < a[m] || (a[start] == a[m] && a[m] > a[end])) {
+	                start = m + 1;
+	            } else {
+	                end = m - 1;
+	            }
+			
+		}
+		return -1;
+	}
+
+}

@@ -1,0 +1,18 @@
+package DataStructure;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         LinkedL l1=new LinkedL();
+         l1.insert(2);
+         l1.insert(3);
+         l1.insert(5);
+         l1.insert(11);
+        l1.insertlast(188);
+        l1.insertAtIndex(0, 3);
+         l1.display();
+         
+	}
+
+}

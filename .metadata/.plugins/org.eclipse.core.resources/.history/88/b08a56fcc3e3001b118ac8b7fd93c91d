@@ -1,0 +1,14 @@
+package Polimorphism;
+
+public class ClassB extends ClassA {
+	public void start() {
+		System.out.println("Class B is started");
+	}
+	public void stop() {
+		System.out.println("Class B is stoped");
+	}
+	public static void main(String []args) {
+		ClassA a=new ClassB();
+		a.start();
+	}
+}

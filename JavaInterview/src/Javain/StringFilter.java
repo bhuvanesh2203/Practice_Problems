@@ -1,0 +1,23 @@
+package Javain;
+
+public class StringFilter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s="ab5cd6AN";
+		String replaceString=s.replaceAll("[^A-Za-z]", "");
+		System.out.println(replaceString);
+		String numString=s.replaceAll("[a-z]", "");
+		char a[]=numString.toCharArray();
+		System.out.println(a);
+		int count=0;
+		for(int i=0;i<a.length;i++) {
+			
+			count=count+Character.getNumericValue(a[i]);
+		}
+		System.out.println(replaceString+count);
+
+	}
+
+}

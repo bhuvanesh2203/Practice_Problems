@@ -1,0 +1,26 @@
+package backtracking;
+
+import java.util.List;
+
+public class Realbacktracking {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	static void backpaths(boolean b[][],String pro,int r,int c,List<String> l1) {
+		if(r==b.length-1 && c==b[0].length-1) {
+			l1.add(pro);
+			return;
+		}
+		b[r][c]=false;
+		if(!b[r][c]) {
+			return;
+		}
+		
+		if(r)
+		
+	}
+
+}

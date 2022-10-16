@@ -1,0 +1,29 @@
+package Problems;
+
+public class Findrotationcountbinarysearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a[]={15, 18, 2, 3, 6, 12};
+		System.out.println(count(a,0,a.length));
+
+	}
+	
+	
+	static int count(int a[],int start,int end) {
+		int count=0;
+		while(start<=end) {
+			int m=start+(end-start)/2;
+			if(a[m]>a[m+1]) {
+				count++;
+			}
+			else if(a[m]<a[m-1]){
+				count++;
+			}
+			
+		}
+		return count;
+	}
+
+}

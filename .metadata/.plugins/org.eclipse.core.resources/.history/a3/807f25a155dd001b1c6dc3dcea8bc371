@@ -1,0 +1,9 @@
+package com.Bhuvanesh.Spring.config;
+
+private class ClassB extends ClassA {
+	public void start() {
+		System.out.println("BMW is started");
+		
+	}
+
+}

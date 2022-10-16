@@ -1,0 +1,18 @@
+package Recursion;
+
+public class to1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println(5);
+	}
+  static void m1(int n) {
+	  if(n==0) {
+		  System.out.println("came at last"+n);
+		  return ;
+	  }
+	  System.out.println(n);
+	  n=n-1;
+	   m1(n);
+  }
+}

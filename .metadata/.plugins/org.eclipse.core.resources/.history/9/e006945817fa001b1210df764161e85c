@@ -1,0 +1,33 @@
+package javaPracticeImportantprograms;
+
+public class Duplicatebruteforce {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String aString="abcdaaaabb";int count=0;
+		char c[]=new char[aString.length()];
+		/*for(int i=0;i<aString.length();i++) {
+			for(int j=i+1;j<aString.length();j++) {
+				if(aString.charAt(i)!=(aString.charAt(j))) {
+					c[count++]=aString.charAt(i);
+				}
+				
+			}*/
+		
+		char a[]=aString.toCharArray();
+		for(int i=0;i<a.length-1;i++) {
+			if(!(a[i]==a[i+1])) {
+				c[count++]=a[i];
+			}
+			
+		}
+		c[count++]=a[a.length-1];
+		
+			for(char c1:c) {
+				System.out.println(c1);
+			}
+		
+
+	}
+
+}

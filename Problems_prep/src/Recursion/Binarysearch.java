@@ -1,0 +1,36 @@
+package Recursion;
+
+public class Binarysearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  int a[]= {0,1,4,6,9,13,77};
+  System.out.println("ams1");
+  m1(a, 13, 0, a.length-1);
+  System.out.println(m1(a, 13, 0, a.length-1));
+	}
+	
+	static int m1(int a[],int target,int s,int e) {
+		if(s>e) {
+			return -1;
+		}
+		
+			int m=e +(s-e)/2;
+			if(target>a[m]) {
+				return m1(a, target, m+1, e);
+			}
+			else if (target<a[m]) {
+			return	m1(a, target, s, m-1);
+			}
+			
+				return m;
+			
+		
+	
+		
+		
+		
+	
+	}
+
+}

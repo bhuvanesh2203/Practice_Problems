@@ -1,0 +1,39 @@
+package Javain;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Repeatedstringhashmap {
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="java is java and";
+		String stringarray[]=s.split(" ");
+		
+		HashMap <String,Integer>wordcount=new HashMap<String, Integer>();
+		for(String s1:stringarray) {
+			if(wordcount.containsKey(s)) {
+				wordcount.put(s1, wordcount.get(s1)++);
+			}
+			else {
+				wordcount.put(s1, 1);
+			}
+		}
+		Set<String> set1=new HashSet<String>();
+		set1=wordcount.keySet();
+		for(String s2:set1) {
+			if(wordcount.get(s2)>1) {
+				System.out.println(s2+" word is repeated"+wordcount.get(s2));
+			}
+			else {
+				System.out.println(s2+" is repeated "+wordcount.get(s2));
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package newSuit;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class SeleniumRevision {
+	@Test
+	public void test1() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://www.leafground.com/pages/Alert.html");//thhhhh
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
+		driver.quit();
+	} 
+}

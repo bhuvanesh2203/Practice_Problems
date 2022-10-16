@@ -1,0 +1,21 @@
+package Problems;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class duplicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="bhuvanesh";
+		char c[]=s.toCharArray();
+		Set<Character> set=new HashSet<Character>();
+		for(char c1: c) {
+			if(set.add(c1)==false) {
+				System.out.println("duplicate element is :"+c1);
+			}
+		}
+
+	}
+
+}

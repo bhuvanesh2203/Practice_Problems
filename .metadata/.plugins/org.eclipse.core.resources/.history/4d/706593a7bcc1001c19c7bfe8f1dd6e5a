@@ -1,0 +1,27 @@
+package test;
+class Solution {
+    public int diagonalSum(int[][] mat) {
+        int sum=0;
+        for(int i=0;i<mat.length;i++){
+            
+            for(int j=0;j<mat[i].length;j++){
+                if(i==j){
+                    sum+=mat[i][j];
+                }
+                
+            }
+        }
+        System.out.println("first:"+sum);
+        int row_mat=mat.length-1;
+     
+        int i=0;
+        while(row_mat>=0 &&i<mat.length){
+          if(row_mat==i){continue;}
+            sum+=mat[row_mat--][i++];
+            
+        }
+        
+        return sum;
+        
+    }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-16T12:38:38 IST" name="Default suite" finished-at="2022-02-16T12:38:42 IST" duration-ms="3378">
+    <groups>
+      <group name="run">
+        <method signature="gears.d()[pri:0, instance:newSuit.gears@18ce0030]" name="d" class="newSuit.gears"/>
+        <method signature="gears.a()[pri:0, instance:newSuit.gears@18ce0030]" name="a" class="newSuit.gears"/>
+      </group> <!-- run -->
+    </groups>
+    <test started-at="2022-02-16T12:38:38 IST" name="Default test" finished-at="2022-02-16T12:38:42 IST" duration-ms="3378">
+      <class name="newSuit.gears">
+        <test-method signature="bh()[pri:0, instance:newSuit.gears@18ce0030]" started-at="2022-02-16T12:38:38 IST" name="bh" finished-at="2022-02-16T12:38:38 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bh -->
+        <test-method signature="d()[pri:0, instance:newSuit.gears@18ce0030]" started-at="2022-02-16T12:38:38 IST" name="d" finished-at="2022-02-16T12:38:38 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d -->
+        <test-method signature="a()[pri:0, instance:newSuit.gears@18ce0030]" started-at="2022-02-16T12:38:38 IST" name="a" finished-at="2022-02-16T12:38:41 IST" duration-ms="3333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method signature="c()[pri:0, instance:newSuit.gears@18ce0030]" started-at="2022-02-16T12:38:42 IST" name="c" finished-at="2022-02-16T12:38:42 IST" depends-on-methods="newSuit.gears.bh" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c -->
+      </class> <!-- newSuit.gears -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

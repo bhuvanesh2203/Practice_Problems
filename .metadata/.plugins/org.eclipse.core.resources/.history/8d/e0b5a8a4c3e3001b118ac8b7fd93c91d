@@ -1,0 +1,11 @@
+package Polimorphism;
+
+public class ClassA {
+	public void start() {
+		System.out.println("Class A is started");
+	}
+	public void stop() {
+		System.out.println("Class A is stoped");
+	}
+
+}

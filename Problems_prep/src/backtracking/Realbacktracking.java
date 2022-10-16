@@ -1,0 +1,83 @@
+package backtracking;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Realbacktracking {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean b[][] = {{true,true,true},
+				{true,true,true},
+				{true,true,true}};
+		List<String> l1=new ArrayList<>();
+		//backpaths(b, "", 0, 0, l1);
+		int a[][]=new int[b.length][b[0].length];	backpathsStepdount(b, "", 0, 0, l1,a,1);
+		System.out.println(l1);
+	}
+	
+	static void backpaths(boolean b[][],String pro,int r,int c,List<String> l1) {
+		if(r==b.length-1 && c==b[0].length-1) {
+			l1.add(pro);
+			
+			return;
+		}
+		
+		if(!b[r][c]) {
+			return;
+		}
+		b[r][c]=false;
+		if(r<b.length-1) {
+			backpaths(b, pro+'D', r+1, c, l1);
+		}
+		if(c<b[0].length-1) {
+			backpaths(b, pro+'R', r, c+1, l1);
+		}
+		
+		if(r>0) {
+			backpaths(b, pro+'U', r-1, c ,l1);
+		}
+		if(c>0 ) {
+			backpaths(b, pro+'L', r, c-1 ,l1);
+		}
+		b[r][c]=true;
+		//count=0;
+		
+	}
+	static void backpathsStepdount(boolean b[][],String pro,int r,int c,List<String> l1,int path[][],int step) {
+		if(r==b.length-1 && c==b[0].length-1) {
+		//	l1.add(step);
+			path[r][c]=step;
+			for(int a[]:path) {
+				System.out.println(Arrays.toString(a));
+			}
+			System.out.println();
+			//System.out.println(step);
+			return;
+		}
+		
+		if(!b[r][c]) {
+			return;
+		}
+		b[r][c]=false;
+		path[r][c]=step;
+		if(r<b.length-1) {
+			backpathsStepdount(b, pro+'D', r+1, c, l1,path,step+1);
+		}
+		if(c<b[0].length-1) {
+			backpathsStepdount(b, pro+'R', r, c+1, l1,path,step+1);
+		}
+		
+		if(r>0) {
+			backpathsStepdount(b, pro+'U', r-1, c ,l1,path,step+1);
+		}
+		if(c>0 ) {
+			backpathsStepdount(b, pro+'L', r, c-1 ,l1,path,step+1);
+		}
+		b[r][c]=true;
+		//count=0;
+		path[r][c]=0;
+		
+	}
+}

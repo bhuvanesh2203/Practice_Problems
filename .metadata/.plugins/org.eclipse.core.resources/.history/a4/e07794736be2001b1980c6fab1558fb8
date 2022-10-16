@@ -1,0 +1,44 @@
+package Polimorphism;
+
+public class RepeatedElements {
+
+	
+		// TODO Auto-generated method stub
+		public  int countChar(String str, char x)
+		{
+		    int count = 0;
+		    int n = 10;
+		    for (int i = 0; i < str.length(); i++)
+		        if (str.charAt(i) == x)
+		            count++;
+		 
+		    
+		    int repetitions = n / str.length();
+		    count = count * repetitions;
+		 
+		    // if n is not the multiple of the
+		    // string size check for the remaining
+		    // repeating character.
+		    for (int i = 0;
+		            i < n % str.length(); i++)
+		    {
+		        if (str.charAt(i) == x)
+		            count++;
+		    }
+		 
+		    return count;
+		}
+		 
+		// Driver code
+		public static void main(String args[])
+		{
+		    String str = "abcac";
+		    RepeatedElements aElements=new RepeatedElements();
+		    System.out.println(aElements.countChar(str, 'a'));
+		}
+		
+
+	}
+
+
+

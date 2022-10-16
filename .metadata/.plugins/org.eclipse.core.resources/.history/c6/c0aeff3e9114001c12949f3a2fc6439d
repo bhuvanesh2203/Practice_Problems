@@ -1,0 +1,22 @@
+package newSuit;
+
+public class Practice {
+	public static int fun(int a,int b,int c) {
+		
+		for( int i=2;i<=5;i++) {
+			a=(12&1)+c;
+			if((b&c)<(a^b)) {
+				a=a+c;
+			}
+		}
+		return a+b;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int a=fun(8, 5, 10);
+       System.out.println("a is:"+a);
+	}
+
+}

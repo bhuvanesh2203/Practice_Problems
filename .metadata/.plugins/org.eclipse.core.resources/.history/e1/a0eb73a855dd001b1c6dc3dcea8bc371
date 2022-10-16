@@ -1,0 +1,13 @@
+package com.Bhuvanesh.Spring.config;
+
+public class ExecuteCar {
+
+	public static final void main(String[] args) {
+		// TODO Auto-generated method stub
+       ClassA a=new ClassA();
+       a.start();
+       a.stop();
+       
+	}
+
+}

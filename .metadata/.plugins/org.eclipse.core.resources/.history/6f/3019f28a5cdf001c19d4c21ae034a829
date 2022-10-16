@@ -1,0 +1,42 @@
+package DataStructure;
+
+public class CircularLL {
+	private Node tail;
+	private Node heaNode;
+
+	public void insertCyclic(int value) {
+		Node node =new Node(value);
+		
+		if(heaNode==null) {
+			heaNode=node;
+			tail=node;
+			return;
+		}
+		tail.nextNode=node;
+		node.nextNode=heaNode;
+		tail=node;
+	}
+	
+	public void display() {
+		Node tempNode=heaNode;
+		do {
+			System.out.print(tempNode.value+"->");
+			tempNode=tempNode.nextNode;
+		} while (tempNode!=heaNode);
+		System.out.println();
+	}
+	private class Node {
+		private	int value;
+		private	Node nextNode;
+		private Node(int value,Node nextNode) {
+			this.value=value;
+			this.nextNode=nextNode;
+		}
+		private Node(int value) {
+			this.value=value;
+			
+		}
+		
+		
+	}
+}

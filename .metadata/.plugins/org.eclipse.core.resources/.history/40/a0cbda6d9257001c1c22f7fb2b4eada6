@@ -1,0 +1,10 @@
+package Problems;
+
+public class Concecutive_num_sum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

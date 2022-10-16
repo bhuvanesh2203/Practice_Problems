@@ -1,0 +1,34 @@
+package SubsetandSubsequence;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import sun.jvm.hotspot.utilities.IntArray;
+
+public class subset {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int a[]= {1,2,3};
+       System.out.println(m1(a));
+       }
+	}
+	
+	
+	static List<List<Integer>> m1(int a[]){
+		List<List<Integer>> outer=new ArrayList<>();
+		
+		  outer.add(new ArrayList<>());
+		for(int n:a) {
+			List<Integer> internaList =new ArrayList<>(outer.get(n));
+			internaList.add(n);
+			outer.add(internaList);
+		}
+		
+		
+		
+		return outer;
+		
+	}
+
+}

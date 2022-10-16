@@ -1,0 +1,21 @@
+package Javain;
+
+
+import java.util.Arrays;
+import java.util.List;
+
+public class reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          String revString="buffer";
+          StringBuffer stringBuffer=new StringBuffer();
+          stringBuffer.append(revString);
+          stringBuffer.reverse();
+          System.out.println(stringBuffer);
+          String string[]= {"1","2"};
+          List<String> l1=Arrays.asList(string);
+          System.out.println(l1);
+	}
+
+}

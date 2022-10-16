@@ -1,0 +1,52 @@
+package Javain;
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class LargetsandSmallest {
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         int[] a= {1,3,4,8,0,-1,5,7,7};
+         int b[]=new int[a.length];
+         int index=0;
+         for(int i=0;i<a.length;i++) {
+        	 for(int j=i+1;j<a.length;j++) {
+        		 if(!(a[i]==a[j])) {
+        			 a[i]=b[index++];
+        		 }
+        	
+         
+       
+        
+       
+        
+         
+         
+      
+         int largest=b[0];
+         int smallest=b[0];
+           
+           for( j=1;j<b.length;j++) {
+        	   if(b[j]>largest) {
+        		   largest=b[j];
+        	   }
+        	   else if (b[j]<smallest) {
+        		   b[j]=smallest;
+    			
+    		}
+           }
+           System.out.println("array"+b);
+           System.out.println("latgest"+largest);
+           System.out.println("small"+smallest);
+         
+   
+	}}
+
+}}

@@ -1,0 +1,24 @@
+package newSuit;
+
+public class Practice {
+	public static int fun(int a,int b,int c) {
+		
+	a=4+c;
+	for(int i=5;i<=9;i++) {
+		b=(c+10)+c;
+		if(a<a || 6<b) {
+			a=(a+c)+a;
+			a=(6+2)+c;
+			break;
+		}
+	}
+		return a+b;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int a=fun(7, 3, 5);
+       System.out.println("a is:"+a);
+	}
+
+}

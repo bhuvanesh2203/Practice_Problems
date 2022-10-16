@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [parameters suit]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="3" parallel="methods" name="parameters check the values for each testcase(failed)" verbose="2">
+    <classes>
+      <class name="newSuit.parallelexecution">
+        <methods>
+          <include name="openflipkart"/>
+          <include name="openamazon"/>
+          <include name="openyoutube"/>
+        </methods>
+      </class> <!-- newSuit.parallelexecution -->
+    </classes>
+  </test> <!-- parameters check the values for each testcase(failed) -->
+</suite> <!-- Failed suite [parameters suit] -->

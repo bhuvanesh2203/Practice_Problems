@@ -1,0 +1,37 @@
+package Problems;
+
+import java.util.Arrays;
+
+
+public class Binarysearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a[]= {2,4,6,9,11,23};
+		//Arrays.sort(a);
+		//System.out.println();
+		
+		
+		System.out.println("find index:"+ searchindex(a, 4));
+
+	}
+	static int searchindex(int a[], int target) {
+		int start=0;
+		int end =a.length-1;
+		int m=start+  (end-start)/2;
+		while(start<end) {
+			if(a[m]==target) {
+				return m;
+			}
+			else if(target<a[m]){
+				end=end-1;
+			}
+			else {
+				start=m+1;
+			}
+		}
+		return -1;
+	}
+
+}

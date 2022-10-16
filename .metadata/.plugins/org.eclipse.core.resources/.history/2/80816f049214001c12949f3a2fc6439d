@@ -1,0 +1,20 @@
+package newSuit;
+
+public class Practice {
+	public static int fun(int a,int b,int c) {
+		
+	a=(b+c)&c;
+	a=(a+6)+c;
+	a=2+a;
+	a=(3+5)+a;
+	b=(b+8)+a;
+		return a+b+c;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int a=fun(8, 3, 5);
+       System.out.println("a is:"+a);
+	}
+
+}

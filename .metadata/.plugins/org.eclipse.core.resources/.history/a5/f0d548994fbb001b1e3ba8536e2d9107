@@ -1,0 +1,14 @@
+package newSuit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class PopupExample {
+	@Test
+	public void test1() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://leafground.com/pages/Window.html");
+
+}

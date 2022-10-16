@@ -1,0 +1,26 @@
+package com.Bhuvanesh.Spring.config;
+
+class A
+{
+    int i = 10;
+
+    public void setI(int b)
+    {
+        i = b;
+    }
+
+    public int getI()
+    {
+        return i;
+    }
+}
+
+class Test extends A
+{    
+    public static void main(String args[]) throws Throwable
+    { 
+        final A ob = new A();
+        ob.setI(10);
+        System.out.println(ob.getI());
+    }
+}}

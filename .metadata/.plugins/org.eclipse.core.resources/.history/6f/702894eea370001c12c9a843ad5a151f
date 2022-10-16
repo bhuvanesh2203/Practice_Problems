@@ -1,0 +1,32 @@
+package Problems;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class duplicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="bhuvanesabbh";
+		char c[]=s.toCharArray();
+		Set<Character> set=new HashSet<Character>();
+		for(char c1: c) {
+			if(set.add(c1)==false) {
+				System.out.println("duplicate element is :"+c1);
+			}
+			
+			int count=0;
+			for(int i=0;i<c.length;i++) {
+				
+				for(int j=i+1;j<c.length;j++) {
+					if(c[i]==c[j]) {
+						count++;
+						System.out.println("second duplicate:"+c[i]);
+					}
+				}
+			}
+		}
+
+	}
+
+}

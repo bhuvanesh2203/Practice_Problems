@@ -1,0 +1,12 @@
+package Javain;
+
+import java.util.Scanner;
+
+public class Strinsh {
+	public static void main(String[] args) {
+	Scanner sc =new Scanner(System.in);
+	String string=sc.nextLine();
+	String replacedString=string.replaceAll("[^a-zA-Z0-9]", "");
+	System.out.println(replacedString);
+	}
+}

@@ -1,0 +1,20 @@
+package Javain;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Duploicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+            String s="abcsa";
+            char a[]=s.toCharArray();
+            Set<Character> set1=new HashSet<Character>();
+            for(char a1 :a) {
+            	if(set1.add(a1)==false) {
+            		System.out.println("duplicate is "+a1);
+            	}
+            }
+	}
+
+}

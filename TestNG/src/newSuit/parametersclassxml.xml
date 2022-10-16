@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="parameters suit" verbose="2">
+<test name="parameters check the values for each testcase">
+
+<parameter name="name1" value=" testcase 1 is executed"></parameter>
+<parameter name="name2" value=" testcase 2 is executed"></parameter>
+<parameter name="name3" value=" testcase 3 is executed"></parameter>
+<parameter name="name4" value=" testcase 4 is executed"></parameter>
+<groups>
+<run>
+<exclude name="run" ></exclude>
+</run>
+</groups>
+<classes>
+<class name="newSuit.parameters"></class>
+</classes>
+
+</test>
+</suite>

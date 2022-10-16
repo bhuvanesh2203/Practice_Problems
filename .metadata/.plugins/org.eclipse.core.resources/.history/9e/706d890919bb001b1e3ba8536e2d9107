@@ -1,0 +1,34 @@
+package newSuit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class UIvalidationsClass {
+	@Test
+	public void test1() {
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chrome\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("http://leafground.com/pages/Edit.html");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.id("email")).sendKeys("bhuvaesng@hm.com");
+		System.out.println("1st done");
+		driver.findElement(By.xpath("//*[@id=\'contentblock\']/section/div[2]/div/div/input")).sendKeys("test");
+		System.out.println("2st done");
+		System.out.println(driver.findElement(By.name("username")).getText());
+      
+		driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[4]/div/div/input")).clear();
+		
+		
+		driver.quit();
+		
+	}
+	@Test
+	public void test2() {
+		
+		
+	}
+
+}

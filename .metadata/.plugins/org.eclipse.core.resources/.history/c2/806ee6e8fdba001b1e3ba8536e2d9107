@@ -1,0 +1,19 @@
+package newSuit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class UIvalidationsClass {
+	@Test
+	public void test1() {
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chrome\\chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		
+		driver.findElement(By.partialLinkText("Learn Automation Online")).click();
+		driver.quit();
+		
+	}
+
+}
