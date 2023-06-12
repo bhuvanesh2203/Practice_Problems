@@ -1,0 +1,15 @@
+package DataStructure;
+
+public class CustomStack {
+
+    public static final DEFAULT_SIZE=10;
+    protected  int data[];
+        
+    public void CustomStack() {   this(size);
+     
+    }
+    public CustomStack(int size) {
+        this.data=new int [size];
+        
+    }
+}

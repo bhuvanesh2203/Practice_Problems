@@ -2,9 +2,9 @@ package javabasics;
 
 public class String {
 
-	public static void main(java.lang.String[] args) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		java.lang.String str1= "abcbc";
+	  java.lang.String str1= "abcbc";
 		char a[]=str1.toCharArray();
 		int count=0;
 		for(int i=0;i<a.length;i++) {
@@ -22,10 +22,7 @@ public class String {
 			
 		}
 	
-	String string="dddd";
-	m1;
-	m2;
-		
+
 	     
 		
 

@@ -1,0 +1,27 @@
+package Recursion;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Subset {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        subset("", "abc");
+        System.out.println(s1);
+
+    }
+    static List<String> s1=new ArrayList<>();
+    public static void subset(String pro,String unprp) {
+        if(unprp.isEmpty()) {
+            s1.add(pro);
+            return;
+        }
+        char c=unprp.charAt(0);
+         subset(pro, unprp);
+         subset(c+pro, unprp);
+        
+        
+    }
+
+}

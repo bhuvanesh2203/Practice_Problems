@@ -1,0 +1,37 @@
+package DataStructure;
+
+import java.util.Arrays;
+
+import com.sun.java.swing.action.HelpAction;
+
+public class TwoStack {
+    
+    
+    public int twostack(int maxSum,int a[], int[] b, int count) {
+        return helpMethod( maxSum, a,  b,  count);
+    }
+    
+    
+
+  private int helpMethod(int maxSum, int[] a, int[] b, int count) {
+        // TODO Auto-generated method stub
+      if(count >maxSum) {
+          return count;
+      }
+      if(a.length==0 || b.length==0) {
+          return count;
+      }
+      int ans1= helpMethod(maxSum, Arrays.copyOfRange(a, 1, a.length), b, count+a[0]);
+      int anss= helpMethod(maxSum,a,  Arrays.copyOfRange(b, 1, b.length), count+b[0]);
+      
+      return Math.max(ans1, anss);
+    }
+
+
+
+public static void main(String args[]) {
+      int a[]= {4,2,4,6,1};
+      int b[]= {2,1,8,5};
+      
+  }
+}

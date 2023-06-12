@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;DataStructure.Stack.java&apos; to &apos;StackDS.java&apos;&#x0D;&#x0A;- Original project: &apos;Problems_prep&apos;&#x0D;&#x0A;- Original element: &apos;DataStructure.Stack.java&apos;&#x0D;&#x0A;- Renamed element: &apos;DataStructure.StackDS.java&apos;" description="Rename compilation unit &apos;Stack.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;DataStructure{Stack.java" name="StackDS.java" references="false" stamp="1671297748555" version="1.0"/>
+</session>

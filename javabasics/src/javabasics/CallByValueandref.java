@@ -1,16 +1,20 @@
 package javabasics;
 
+import Polimorphism.interfacecar;
+
 public class CallByValueandref {
 	int a=20;
 	int b=40;
+	int c=9;
 	public static void main(String[] args) {
 		CallByValueandref callByValueandref=new CallByValueandref();
 		callByValueandref.sum();
 		callByValueandref.a=30; 
 		callByValueandref.b=70;
-		callByValueandref.swap(callByValueandref);
+		callByValueandref.swap(callByValueandref); 
 		
 	
+		
 		
 		
 		

@@ -1,0 +1,36 @@
+package DataStructure;
+
+public class CircularQue {
+    public static int DEFAULT_SIZE=5;
+    protected  int data[];
+    int first=0;
+    int end=0;
+    int size=0;
+    public CircularQue(){
+        this(DEFAULT_SIZE);
+    }
+    public CircularQue(int size){
+        this.data=new int[size];
+
+    }
+    
+    public boolean insert(int item) throws  Exception{
+        if(full()){
+            throw new Exception("this que is full cant add anymore");
+        }
+
+        data[end++]=item;
+        end=end%data.length;
+        size++;
+
+
+        return true;
+    }
+    public boolean empty(){
+        return size== 0;
+    }
+    
+    public boolean full(){
+        return size== data.length;
+    }
+}

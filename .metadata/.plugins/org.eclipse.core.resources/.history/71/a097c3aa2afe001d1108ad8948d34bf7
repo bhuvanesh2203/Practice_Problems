@@ -1,0 +1,17 @@
+package DataStructure;
+
+import java.awt.PrintGraphics;
+
+public class TwoStack {
+    
+    
+    public PrintGraphics
+    
+    
+
+  public static void main(String args[]) {
+      int a[]= {4,2,4,6,1};
+      int b[]= {2,1,8,5};
+      
+  }
+}
